@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video games reviews</title>
+    </head>
+    <body>
+        <a></a>
+        {{ form(form, {'action': path('video_game_creation'), 'method': 'GET'}) }}
+        <ul id="navigation">
+        {% for item in videoGames %}
+            <li>{{ item.object.name }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
