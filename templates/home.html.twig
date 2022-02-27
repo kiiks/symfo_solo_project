@@ -5,10 +5,10 @@
     </head>
     <body>
         <a></a>
-        {{ form(form, {'action': path('video_game_creation'), 'method': 'GET'}) }}
+        {{ form(form) }}
         <ul id="navigation">
         {% for item in videoGames %}
-            <li>{{ item.object.name }}</li>
+            <li>{{ item.name }} - {{ item.studio }}</li>
         {% endfor %}
         </ul>
     </body>

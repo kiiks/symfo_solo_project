@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello VideoGameCreationController!{% endblock %}
+{% block title %}New video game{% endblock %}
 
 {% block body %}
 <style>
@@ -9,12 +9,6 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/kiiks/Documents/Gobelins/Symfony/symfo_solo_project/src/Controller/VideoGameCreationController.php'|file_link(0) }}">src/Controller/VideoGameCreationController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/kiiks/Documents/Gobelins/Symfony/symfo_solo_project/templates/video_game_creation/index.html.twig'|file_link(0) }}">templates/video_game_creation/index.html.twig</a></code></li>
-    </ul>
+    {{ form(form) }}
 </div>
 {% endblock %}
